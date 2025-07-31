@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Talento Transpersonal - Desarrollo humano a través de la psicología transpersonal. Cursos, diplomados y formación integral para terapeutas y coaches.">
+    <meta name="keywords" content="psicología transpersonal, desarrollo humano, terapias integrativas, cursos psicología, diplomados, México">
+    <title>Talento Transpersonal - Desarrollo Humano y Psicología Transpersonal</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="src/css/styles.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'green-light': '#86EFAC',
+                        'green-medium': '#4ADE80',
+                        'green-dark': '#16A34A',
+                        'cream': '#F0FDF4',
+                        'accent-blue': '#60A5FA'
+                    },
+                    fontFamily: {
+                        'sans': ['Open Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-cream text-gray-800">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50" role="navigation" aria-label="Navegación principal">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center space-x-3">
+                    <img src="src/assets/images/Logo.png" alt="Logo Talento Transpersonal" class="h-10 w-10">
+                    <h1 class="text-xl font-bold text-green-700">Talento Transpersonal</h1>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#hero" class="nav-link text-gray-700 hover:text-accent-blue px-3 py-2 rounded-md text-sm font-medium transition-colors">Inicio</a>
+                        <a href="#cursos" class="nav-link text-gray-700 hover:text-accent-blue px-3 py-2 rounded-md text-sm font-medium transition-colors">Cursos</a>
+                        <a href="#diplomados" class="nav-link text-gray-700 hover:text-accent-blue px-3 py-2 rounded-md text-sm font-medium transition-colors">Diplomados</a>
+                        <a href="#sobre-nosotros" class="nav-link text-gray-700 hover:text-accent-blue px-3 py-2 rounded-md text-sm font-medium transition-colors">Sobre Nosotros</a>
+                        <a href="#contacto" class="nav-link text-gray-700 hover:text-accent-blue px-3 py-2 rounded-md text-sm font-medium transition-colors">Contacto</a>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="mobile-menu-btn bg-gray-200 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-accent-blue" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Abrir menú principal</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
+                <a href="#hero" class="nav-link-mobile text-gray-700 hover:text-accent-blue block px-3 py-2 rounded-md text-base font-medium">Inicio</a>
+                <a href="#cursos" class="nav-link-mobile text-gray-700 hover:text-accent-blue block px-3 py-2 rounded-md text-base font-medium">Cursos</a>
+                <a href="#diplomados" class="nav-link-mobile text-gray-700 hover:text-accent-blue block px-3 py-2 rounded-md text-base font-medium">Diplomados</a>
+                <a href="#sobre-nosotros" class="nav-link-mobile text-gray-700 hover:text-accent-blue block px-3 py-2 rounded-md text-base font-medium">Sobre Nosotros</a>
+                <a href="#contacto" class="nav-link-mobile text-gray-700 hover:text-accent-blue block px-3 py-2 rounded-md text-base font-medium">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="pt-16 min-h-screen flex items-center bg-gradient-to-br from-cream to-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <!-- Content -->
+                    <div class="order-2 lg:order-1 hero-content">
+                        <div class="flex items-start mb-6">
+                             <img src="src/assets/images/Logo.png" alt="Logo Talento Transpersonal" class="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 mr-4 mt-1">
+                             <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-green-dark leading-tight">
+                                 Talento <span class="text-accent-blue">Transpersonal</span>
+                             </h1>
+                         </div>
+                        <p class="text-lg md:text-xl text-green-medium mb-8 leading-relaxed mission-text">
+                            Somos una organización dedicada a promover el desarrollo humano a través de la psicología transpersonal, basada en un enfoque integrativo.
+                        </p>
+                        
+                        <!-- Mission -->
+                        <div class="bg-white/80 backdrop-blur-sm rounded-lg p-6 mb-8 border border-green-light/20 mission-section">
+                    <h2 class="text-xl font-semibold text-green-dark mb-4">Nuestra Misión</h2>
+                            <ul class="text-gray-700 space-y-2">
+                                <li class="flex items-start">
+                                    <span class="text-accent-blue mr-2">•</span>
+                                    Acompañar a nuestros alumnos en su proceso de desarrollo personal
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-accent-blue mr-2">•</span>
+                                    Brindar herramientas integrales para terapeutas y coaches
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-accent-blue mr-2">•</span>
+                                    Formar instructores presenciales de nuestros diplomados especializados
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- CTAs -->
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="#cursos" class="cta-primary bg-accent-blue text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-600 transition-colors text-center">
+                                Ver Cursos
+                            </a>
+                            <a href="#contacto" class="cta-secondary border-2 border-green-dark text-green-dark px-8 py-3 rounded-lg font-semibold hover:bg-green-dark hover:text-white transition-colors text-center">
+                                Contáctanos
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Image -->
+                    <div class="order-1 lg:order-2 hidden lg:block">
+                        <div class="relative instructor-photo">
+                            <img src="src/assets/images/Cristi.png" alt="Psic. Cristina Figueroa Quirino, fundadora de Talento Transpersonal" class="w-full max-w-md mx-auto rounded-2xl shadow-2xl">
+                            <div class="absolute -bottom-4 -right-4 bg-accent-blue text-white p-4 rounded-lg shadow-lg">
+                                <p class="text-sm font-semibold">30+ años</p>
+                                <p class="text-xs">de experiencia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cursos Section -->
+        <section id="cursos" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-green-dark mb-4">Nuestros Cursos</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">Descubre nuestros cursos especializados diseñados para tu crecimiento personal y profesional</p>
+                </div>
+                
+                <div class="slider-container relative">
+                    <div class="slider-wrapper overflow-hidden">
+                        <div class="slider-track flex transition-transform duration-500 ease-in-out">
+                            <!-- Curso 1 -->
+                            <div class="curso-slide flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4">
+                                <div class="curso-card bg-gradient-to-br from-cream to-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 border border-green-light/20 hover:border-accent-blue/30 flex flex-col">
+                                    <div class="text-accent-blue mb-6">
+                                        <img src="src/assets/images/icons/tranquilo.png" alt="Icono Calma tu mente" class="w-16 h-16">
+                                    </div>
+                                    <h3 class="text-2xl font-bold text-green-dark mb-4">Calma tu mente</h3>
+                                    <p class="text-gray-600 mb-6 flex-grow">Aprende técnicas efectivas de relajación y mindfulness para reducir el estrés y encontrar la paz interior en tu vida diaria.</p>
+                                    <div class="flex items-center justify-between mb-6">
+                                        <span class="text-2xl font-bold text-accent-blue">$1,200</span>
+                                        <span class="text-sm text-gray-500">8 semanas</span>
+                                    </div>
+                                    <div class="mt-auto">
+                                         <a href="https://wa.me/522461413233?text=Hola,%20estoy%20interesado%20en%20el%20curso%20'Calma%20tu%20mente'" target="_blank" class="block w-full bg-accent-blue text-white py-3 rounded-lg hover:bg-blue-600 transition-colors font-semibold text-center">
+                                             Inscribirse
+                                         </a>
+                                     </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Curso 2 -->
+                            <div class="curso-slide flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4">
+                                <div class="curso-card bg-gradient-to-br from-cream to-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 border border-green-light/20 hover:border-accent-blue/30 flex flex-col">
+                                    <div class="text-accent-blue mb-6">
+                                        <img src="src/assets/images/icons/psic.png" alt="Icono Fundamentos de psicología" class="w-16 h-16">
+                                    </div>
+                                    <h3 class="text-2xl font-bold text-green-dark mb-4">Fundamentos de psicología</h3>
+                                    <p class="text-gray-600 mb-6 flex-grow">Explora los conceptos fundamentales de la psicología moderna y su aplicación en el desarrollo personal y profesional.</p>
+                                    <div class="flex items-center justify-between mb-6">
+                                        <span class="text-2xl font-bold text-accent-blue">$1,500</span>
+                                        <span class="text-sm text-gray-500">12 semanas</span>
+                                    </div>
+                                    <div class="mt-auto">
+                                         <a href="https://wa.me/522461413233?text=Hola,%20estoy%20interesado%20en%20el%20curso%20'Fundamentos%20de%20psicología'" target="_blank" class="block w-full bg-accent-blue text-white py-3 rounded-lg hover:bg-blue-600 transition-colors font-semibold text-center">
+                                             Inscribirse
+                                         </a>
+                                     </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Curso 3 -->
+                            <div class="curso-slide flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4">
+                                <div class="curso-card bg-gradient-to-br from-cream to-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 border border-green-light/20 hover:border-accent-blue/30 flex flex-col">
+                                    <div class="text-accent-blue mb-6">
+                                        <img src="src/assets/images/icons/nube.png" alt="Icono Estrés: Su comprensión y manejo" class="w-16 h-16">
+                                    </div>
+                                    <h3 class="text-2xl font-bold text-green-dark mb-4">Estrés: Su comprensión y manejo</h3>
+                                    <p class="text-gray-600 mb-6 flex-grow">Comprende las causas del estrés y desarrolla estrategias efectivas para manejarlo de manera saludable y productiva.</p>
+                                    <div class="flex items-center justify-between mb-6">
+                                        <span class="text-2xl font-bold text-accent-blue">$1,500</span>
+                                        <span class="text-sm text-gray-500">6 semanas</span>
+                                    </div>
+                                    <div class="mt-auto">
+                                        <a href="https://wa.me/522461413233?text=Hola,%20estoy%20interesado%20en%20el%20curso%20'Estrés:%20Su%20comprensión%20y%20manejo'" target="_blank" class="block w-full bg-accent-blue text-white py-3 rounded-lg hover:bg-blue-600 transition-colors font-semibold text-center">
+                                            Inscribirse
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Curso 4 - Próximamente -->
+                            <div class="curso-slide flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4">
+                                <div class="curso-card bg-gradient-to-br from-gray-50 to-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 border border-gray-200 hover:border-accent-blue/30 opacity-75 flex flex-col">
+                                    <div class="text-gray-400 mb-6">
+                                        <img src="src/assets/images/icons/proximo.png" alt="Icono Próximamente" class="w-16 h-16 opacity-60">
+                                    </div>
+                                    <h3 class="text-2xl font-bold text-gray-500 mb-4">Próximamente</h3>
+                                    <p class="text-gray-400 mb-6 flex-grow">Estamos preparando nuevos cursos especializados para ampliar tu formación en el desarrollo transpersonal.</p>
+                                    <div class="flex items-center justify-between mb-6">
+                                        <span class="text-2xl font-bold text-gray-400">---</span>
+                                        <span class="text-sm text-gray-400">Pronto</span>
+                                    </div>
+                                    <div class="mt-auto">
+                                        <button class="w-full bg-gray-300 text-gray-500 py-3 rounded-lg cursor-not-allowed font-semibold" disabled>
+                                            Próximamente
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Curso 5 - Próximamente -->
+                            <div class="curso-slide flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4">
+                                <div class="curso-card bg-gradient-to-br from-gray-50 to-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 border border-gray-200 hover:border-accent-blue/30 opacity-75 flex flex-col">
+                                    <div class="text-gray-400 mb-6">
+                                        <img src="src/assets/images/icons/proximo.png" alt="Icono Próximamente" class="w-16 h-16 opacity-60">
+                                    </div>
+                                    <h3 class="text-2xl font-bold text-gray-500 mb-4">Próximamente</h3>
+                                    <p class="text-gray-400 mb-6 flex-grow">Nuevas oportunidades de aprendizaje están en desarrollo para enriquecer tu experiencia educativa.</p>
+                                    <div class="flex items-center justify-between mb-6">
+                                        <span class="text-2xl font-bold text-gray-400">---</span>
+                                        <span class="text-sm text-gray-400">Pronto</span>
+                                    </div>
+                                    <div class="mt-auto">
+                                        <button class="w-full bg-gray-300 text-gray-500 py-3 rounded-lg cursor-not-allowed font-semibold" disabled>
+                                            Próximamente
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Navigation Arrows -->
+                    <button class="slider-prev absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white text-green-dark p-3 rounded-full shadow-lg transition-all duration-300 z-10">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                    </button>
+                    <button class="slider-next absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white text-green-dark p-3 rounded-full shadow-lg transition-all duration-300 z-10">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                    
+                    <!-- Dots Indicator -->
+                    <div class="slider-dots flex justify-center mt-8 space-x-2">
+                        <button class="dot w-3 h-3 rounded-full bg-gray-300 hover:bg-accent-blue transition-colors" data-slide="0"></button>
+                        <button class="dot w-3 h-3 rounded-full bg-gray-300 hover:bg-accent-blue transition-colors" data-slide="1"></button>
+                        <button class="dot w-3 h-3 rounded-full bg-gray-300 hover:bg-accent-blue transition-colors" data-slide="2"></button>
+                        <button class="dot w-3 h-3 rounded-full bg-gray-300 hover:bg-accent-blue transition-colors" data-slide="3"></button>
+                        <button class="dot w-3 h-3 rounded-full bg-gray-300 hover:bg-accent-blue transition-colors" data-slide="4"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Diplomados Section -->
+        <section id="diplomados" class="py-20 bg-gradient-to-br from-cream to-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-green-dark mb-4">Nuestros Diplomados</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">Programas especializados para formar instructores certificados en diversas disciplinas transpersonales</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Diplomado 1 -->
+                    <div class="diplomado-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 border border-green-light/20 hover:border-accent-blue/30 flex flex-col">
+                        <div class="text-accent-blue mb-6">
+                            <img src="src/assets/images/icons/desarrollo.png" alt="Icono Desarrollo humano transpersonal" class="w-16 h-16">
+                        </div>
+                        <h3 class="text-xl font-bold text-green-dark mb-4">Desarrollo humano transpersonal</h3>
+                        <p class="text-gray-600 mb-6 flex-grow">Formación integral en los principios y prácticas de la psicología transpersonal aplicada al desarrollo humano.</p>
+                        <div class="mt-auto">
+                            <button class="w-full bg-accent-blue text-white py-3 rounded-lg hover:bg-blue-600 transition-colors font-semibold">
+                                Ver detalles
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Diplomado 2 -->
+                    <div class="diplomado-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 border border-green-light/20 hover:border-accent-blue/30 flex flex-col">
+                        <div class="text-accent-blue mb-6">
+                            <img src="src/assets/images/icons/personaje.png" alt="Icono Los cuatro arquetipos" class="w-16 h-16">
+                        </div>
+                        <h3 class="text-xl font-bold text-green-dark mb-4">Los cuatro arquetipos</h3>
+                        <p class="text-gray-600 mb-6 flex-grow">Explora los arquetipos fundamentales y su aplicación en el proceso de individuación y crecimiento personal.</p>
+                        <div class="mt-auto">
+                            <button class="w-full bg-accent-blue text-white py-3 rounded-lg hover:bg-blue-600 transition-colors font-semibold">
+                                Ver detalles
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Diplomado 3 -->
+                    <div class="diplomado-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 border border-green-light/20 hover:border-accent-blue/30 flex flex-col">
+                        <div class="text-accent-blue mb-6">
+                            <img src="src/assets/images/icons/cerebro.png" alt="Icono Desprogramación: otro camino a la individuación" class="w-16 h-16">
+                        </div>
+                        <h3 class="text-xl font-bold text-green-dark mb-4">Desprogramación: otro camino a la individuación</h3>
+                        <p class="text-gray-600 mb-6 flex-grow">Metodología innovadora para liberar patrones limitantes y facilitar el proceso de individuación auténtica.</p>
+                        <div class="mt-auto">
+                            <button class="w-full bg-accent-blue text-white py-3 rounded-lg hover:bg-blue-600 transition-colors font-semibold">
+                                Ver detalles
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Diplomado 4 -->
+                    <div class="diplomado-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 border border-green-light/20 hover:border-accent-blue/30 flex flex-col">
+                        <div class="text-accent-blue mb-6">
+                            <img src="src/assets/images/icons/eneagrama.png" alt="Icono Eneagrama" class="w-16 h-16">
+                        </div>
+                        <h3 class="text-xl font-bold text-green-dark mb-4">Eneagrama</h3>
+                        <p class="text-gray-600 mb-6 flex-grow">Domina esta poderosa herramienta de autoconocimiento y transformación personal basada en los nueve tipos de personalidad.</p>
+                        <div class="mt-auto">
+                            <button class="w-full bg-accent-blue text-white py-3 rounded-lg hover:bg-blue-600 transition-colors font-semibold">
+                                Ver detalles
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Diplomado 5 -->
+                    <div class="diplomado-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 border border-green-light/20 hover:border-accent-blue/30 flex flex-col">
+                        <div class="text-accent-blue mb-6">
+                            <img src="src/assets/images/icons/danza.png" alt="Icono Danzaterapia" class="w-16 h-16">
+                        </div>
+                        <h3 class="text-xl font-bold text-green-dark mb-4">Danzaterapia</h3>
+                        <p class="text-gray-600 mb-6 flex-grow">Integra el movimiento corporal como herramienta terapéutica para la sanación emocional y el crecimiento personal.</p>
+                        <div class="mt-auto">
+                            <button class="w-full bg-accent-blue text-white py-3 rounded-lg hover:bg-blue-600 transition-colors font-semibold">
+                                Ver detalles
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre Nosotros Section -->
+        <section id="sobre-nosotros" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <!-- Content -->
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-green-dark mb-8">Sobre Nosotros</h2>
+                        
+                        <div class="bg-gradient-to-br from-cream to-white rounded-xl p-8 border border-green-light/20">
+                            <div class="flex items-center mb-6">
+                                <img src="src/assets/images/Cristi.png" alt="Psic. Cristina Figueroa Quirino" class="w-20 h-20 rounded-full object-cover mr-6">
+                                <div>
+                                    <h3 class="text-xl font-bold text-green-dark">Psic. Cristina Figueroa Quirino</h3>
+                                    <p class="text-accent-blue font-semibold">Fundadora y Directora</p>
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-4 text-gray-700">
+                                <p><strong>Licenciatura:</strong> Psicología clínica</p>
+                                <p><strong>Maestría:</strong> Psicología clínica de la salud y cognitivo conductual</p>
+                                <p><strong>Experiencia:</strong> 30 años en práctica clínica privada y consultoría organizacional</p>
+                            </div>
+                            
+                            <div class="mt-8">
+                                <a href="https://www.linkedin.com/in/psic-cristina-figueroa-quirino-985b0854/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-accent-blue text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors font-semibold">
+                                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    Visita mi perfil de LinkedIn para más información
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Values/Philosophy -->
+                    <div>
+                        <div class="space-y-8">
+                            <div class="bg-gradient-to-br from-accent-blue/10 to-accent-blue/5 rounded-xl p-6 border border-accent-blue/20">
+                                <h3 class="text-xl font-bold text-green-dark mb-4">Nuestra Filosofía</h3>
+                                <p class="text-gray-700">Creemos en el potencial infinito del ser humano y en la importancia de un enfoque integral que honre tanto la dimensión psicológica como la espiritual del desarrollo personal.</p>
+                            </div>
+                            
+                            <div class="bg-gradient-to-br from-green-light/10 to-green-light/5 rounded-xl p-6 border border-green-light/20">
+                                <h3 class="text-xl font-bold text-green-dark mb-4">Nuestro Enfoque</h3>
+                                <p class="text-gray-700">Integramos metodologías tradicionales de la psicología con enfoques transpersonales innovadores, creando un espacio seguro para la exploración y el crecimiento auténtico.</p>
+                            </div>
+                            
+                            <div class="bg-gradient-to-br from-cream to-white rounded-xl p-6 border border-green-light/20">
+                                <h3 class="text-xl font-bold text-green-dark mb-4">Nuestro Compromiso</h3>
+                                <p class="text-gray-700">Nos comprometemos a acompañar a cada persona en su viaje único de autodescubrimiento, proporcionando herramientas prácticas y efectivas para su transformación personal.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instructores Certificados Section -->
+        <section id="instructores" class="py-20 bg-gradient-to-br from-cream to-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-green-dark mb-4">Instructores Certificados</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">Nuestros instructores certificados están distribuidos estratégicamente para brindar formación de calidad en diferentes regiones</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Tlaxcala -->
+                    <div class="instructor-location bg-white rounded-xl shadow-lg p-8 border border-green-light/20">
+                        <div class="text-accent-blue mb-4">
+                            <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-green-dark mb-2">Tlaxcala</h3>
+                        <div class="space-y-2">
+                            <p class="text-gray-700 font-medium">Altagracia Peralta Hernández</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Pachuca -->
+                    <div class="instructor-location bg-white rounded-xl shadow-lg p-8 border border-green-light/20">
+                    <div class="text-accent-blue mb-4">
+                        <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-green-dark mb-2">Pachuca</h3>
+                        <div class="space-y-2">
+                            <p class="text-gray-700 font-medium">Susana Sánchez García</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Querétaro -->
+                    <div class="instructor-location bg-white rounded-xl shadow-lg p-8 border border-green-light/20">
+                    <div class="text-accent-blue mb-4">
+                        <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-green-dark mb-2">Querétaro</h3>
+                        <div class="space-y-2">
+                            <p class="text-gray-700 font-medium">Emilia Carrasco Esquivel</p>
+                            <p class="text-gray-700 font-medium">Isai Carrasco</p>
+                            <p class="text-gray-700 font-medium">Nohemí Pérez Vargas</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-12">
+                    <p class="text-gray-600 mb-6">¿Interesado en convertirte en instructor certificado?</p>
+                    <a href="#contacto" class="inline-flex items-center bg-green-dark text-white px-8 py-3 rounded-lg hover:bg-green-light transition-colors font-semibold">
+                        Solicita información
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto Section -->
+        <section id="contacto" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-green-dark mb-4">Contacto</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">¿Tienes preguntas sobre nuestros cursos o diplomados? Estamos aquí para ayudarte</p>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <!-- Contact Form -->
+                    <div>
+                        <form id="contact-form" class="space-y-6">
+                            <div>
+                                <label for="nombre" class="block text-sm font-medium text-gray-700 mb-2">Nombre completo *</label>
+                                <input type="text" id="nombre" name="nombre" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-blue focus:border-transparent transition-colors" placeholder="Tu nombre completo">
+                                <span class="error-message text-red-500 text-sm hidden">Por favor ingresa tu nombre</span>
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Correo electrónico *</label>
+                                <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-blue focus:border-transparent transition-colors" placeholder="tu@email.com">
+                                <span class="error-message text-red-500 text-sm hidden">Por favor ingresa un email válido</span>
+                            </div>
+                            
+                            <div>
+                                <label for="mensaje" class="block text-sm font-medium text-gray-700 mb-2">Mensaje *</label>
+                                <textarea id="mensaje" name="mensaje" rows="5" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-blue focus:border-transparent transition-colors resize-vertical" placeholder="Cuéntanos en qué podemos ayudarte..."></textarea>
+                                <span class="error-message text-red-500 text-sm hidden">Por favor escribe tu mensaje</span>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-accent-blue text-white py-3 px-6 rounded-lg hover:bg-blue-600 transition-colors font-semibold flex items-center justify-center">
+                                <span class="submit-text">Enviar mensaje</span>
+                                <span class="loading-text hidden">Enviando...</span>
+                                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                                </svg>
+                            </button>
+                        </form>
+                        
+                        <div id="form-success" class="hidden mt-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg">
+                            <p class="font-semibold">¡Mensaje enviado exitosamente!</p>
+                            <p class="text-sm">Te contactaremos pronto.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Info -->
+                    <div class="space-y-8">
+                        <div class="bg-gradient-to-br from-cream to-white rounded-xl p-8 border border-green-light/20 contact-info">
+                            <h3 class="text-xl font-bold text-green-dark mb-6">Información de contacto</h3>
+                            
+                            <div class="space-y-4">
+                                <div class="flex items-center">
+                                    <div class="text-accent-blue mr-4">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="font-semibold text-gray-800">Email</p>
+                                        <a href="mailto:info@talentotranspersonal.com" class="text-accent-blue hover:underline">info@talentotranspersonal.com</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-center">
+                                    <div class="text-accent-blue mr-4">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="font-semibold text-gray-800">Teléfono</p>
+                            <a href="tel:+522461413233" class="text-accent-blue hover:underline">+52 246 141 3233</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-center">
+                                    <div class="text-accent-blue mr-4">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="font-semibold text-gray-800">Ubicación</p>
+                                        <p class="text-gray-600">Ciudad de México, México</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gradient-to-br from-accent-blue/10 to-accent-blue/5 rounded-xl p-8 border border-accent-blue/20">
+                            <h3 class="text-xl font-bold text-green-dark mb-4">Horarios de atención</h3>
+                            <div class="space-y-2 text-gray-700">
+                                <p><strong>Lunes a Viernes:</strong> 9:00 AM - 6:00 PM</p>
+                                <p><strong>Sábados:</strong> 10:00 AM - 2:00 PM</p>
+                                <p><strong>Domingos:</strong> Cerrado</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-green-dark text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="lg:col-span-2">
+                    <h3 class="text-2xl font-bold mb-4">Talento Transpersonal</h3>
+                    <p class="text-gray-300 mb-6 max-w-md">Promovemos el desarrollo humano a través de la psicología transpersonal, basada en un enfoque integrativo y transformador.</p>
+                    
+                    <!-- Social Links -->
+                    <div class="flex space-x-4">
+                        <a href="#" class="social-link text-gray-300 hover:text-accent-blue transition-colors" aria-label="Facebook">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link text-gray-300 hover:text-accent-blue transition-colors" aria-label="Instagram">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987c6.62 0 11.987-5.367 11.987-11.987C24.014 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447c0-1.297.49-2.448 1.297-3.323.875-.807 2.026-1.297 3.323-1.297 1.297 0 2.448.49 3.323 1.297.807.875 1.297 2.026 1.297 3.323 0 1.297-.49 2.448-1.297 3.323-.875.807-2.026 1.297-3.323 1.297zm7.83-9.781c-.49 0-.875-.385-.875-.875 0-.49.385-.875.875-.875.49 0 .875.385.875.875 0 .49-.385.875-.875.875zm-4.262 9.781c-2.448 0-4.427-1.979-4.427-4.427 0-2.448 1.979-4.427 4.427-4.427 2.448 0 4.427 1.979 4.427 4.427 0 2.448-1.979 4.427-4.427 4.427z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/psic-cristina-figueroa-quirino-985b0854/" target="_blank" rel="noopener noreferrer" class="social-link text-gray-300 hover:text-accent-blue transition-colors" aria-label="LinkedIn">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link text-gray-300 hover:text-accent-blue transition-colors" aria-label="YouTube">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Enlaces rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#cursos" class="text-gray-300 hover:text-white transition-colors">Cursos</a></li>
+                        <li><a href="#diplomados" class="text-gray-300 hover:text-white transition-colors">Diplomados</a></li>
+                        <li><a href="#sobre-nosotros" class="text-gray-300 hover:text-white transition-colors">Sobre Nosotros</a></li>
+                        <li><a href="#instructores" class="text-gray-300 hover:text-white transition-colors">Instructores</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contacto</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>info@talentotranspersonal.com</li>
+                        <li>+52 246 141 3233</li>
+                        <li>Ciudad de México, México</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-600 mt-8 pt-8 text-center">
+                <p class="text-gray-300">&copy; 2025 Talento Transpersonal. Todos los derechos reservados. Desarrollado por ParadISe.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="src/js/scripts.js"></script>
+</body>
+</html>
